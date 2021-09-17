@@ -1,12 +1,12 @@
 Metadata-Version: 2.1
 Name: ezil
-Version: 0.0.2
+Version: 0.0.3
 Summary: Ezil.me mining pool API wrapper
-Home-page: https://github.com/pypa/sampleproject
+Home-page: https://github.com/derki-source/py-ezil
 Author: Marek Derer
 Author-email: marek.derer@gmail.com
 License: UNKNOWN
-Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Project-URL: Bug Tracker, https://github.com/derki-source/py-ezil/issues
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
@@ -21,7 +21,7 @@ Simple API wrapper for Ezil.me mining pool. All methods returns dict or None
 
 ## Installation
 ```
-wip
+pip install ethermine
 ```
 
 ## Usage
@@ -31,8 +31,20 @@ import Ezil from ezil
 
 ezil = Ezil()
 ```
-### Pool stats
+### Stats
 ```
 ezil.pool_stats(WALLET_ADDRESS)
+```
+### History
+```
+ezil.pool_history(WALLET_ADDRESS)
+```
+### Balance
+```
+ezil.pool_balance(WALLET_ADDRESS)
+```
+### Forecast
+```
+ezil.pool_forecast(WALLET_ADDRESS)
 ```
 

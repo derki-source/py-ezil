@@ -4,7 +4,7 @@ Simple API wrapper for Ezil.me mining pool. All methods returns dict or None
 
 ## Installation
 ```
-pip install ethermine
+pip install ezil
 ```
 
 ## Usage
